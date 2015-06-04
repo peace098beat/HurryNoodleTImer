@@ -1,0 +1,308 @@
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+    /*background-image:url("img/bg-d.jpg");*/
+    background-image:url("img/bg-d-s.jpg");
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat no-repeat;
+}
+
+#button {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 12;
+    margin-top: 79px;
+    margin-left: 34.481534%;
+    clear: none;
+    margin-right: 0%;
+}
+
+#Harry_Noodle_Timer {
+    float: none;
+    font-size: 3.5573080394558128em;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    font-family: 'Bauhaus 93';
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    margin-top: 74px;
+    margin-left: auto;
+    clear: none;
+    margin-right: auto;
+}
+
+#time {
+    float: none;
+    font-size: 10.4829570871445em;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    margin-top: 0px;
+    margin-left: auto;
+    clear: none;
+    margin-right: auto;
+}
+
+#contact {
+    float: left;
+    font-size: 1.4058483750000001em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    font-family: 'Bell MT';
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 6;
+    margin-top: 27px;
+    margin-left: 28.074437%;
+    clear: none;
+    margin-right: 0%;
+}
+
+#about {
+    float: left;
+    font-size: 1.4058483750000001em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    font-family: 'Bell MT';
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 9;
+    margin-top: 27px;
+    margin-left: 21.507678%;
+    clear: none;
+    margin-right: 0%;
+}
+
+#box {
+    float: none;
+    height: 58px;
+    margin: 35px auto 0px;
+    clear: none;
+    width: 379.53px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(255, 255, 255);
+    border-bottom-style: solid;
+    padding: 0px;
+}
+
+#box1 {
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 157px;
+    clear: both;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1195px) {
+    #contact {
+        margin-right: 0%;
+        clear: none;
+        margin-left: 25.031907%;
+        margin-top: 27px;
+    }
+
+    #time {
+        clear: none;
+    }
+
+    #Harry_Noodle_Timer {
+        margin-top: 23px;
+        clear: none;
+    }
+
+    #button {
+        margin-top: 27px;
+        margin-left: auto;
+        clear: none;
+        margin-right: auto;
+        float: none;
+    }
+
+    #box {
+        clear: none;
+    }
+
+    #about {
+        clear: none;
+        margin-top: 27px;
+        margin-left: 21.503561%;
+    }
+
+    #box1 {
+        margin-top: 70px;
+        margin-left: 0%;
+        clear: none;
+    }
+}
+
+@media only screen and (max-width: 898px) {
+    #box1 {
+        margin-top: 60px;
+        margin-left: 0%;
+        clear: none;
+    }
+
+    #button {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        clear: none;
+    }
+}
+
+@media only screen and (max-width: 638px) {
+    #time {
+        clear: none;
+        margin-top: 0px;
+        font-size: 9.48em;
+    }
+
+    #Harry_Noodle_Timer {
+        margin-top: 23px;
+        clear: none;
+        font-size: 3.06em;
+    }
+
+    #button {
+        margin-top: 27px;
+        margin-left: auto;
+        clear: none;
+        margin-right: auto;
+        float: none;
+    }
+
+    #contact {
+        clear: none;
+        margin-left: 24.504366%;
+        margin-top: 27px;
+    }
+
+    #about {
+        margin-right: 0%;
+        clear: none;
+        margin-left: 15.657093%;
+        margin-top: 27px;
+    }
+
+    #box {
+        width: 284.53px;
+    }
+
+    #box1 {
+        margin-top: 57px;
+        margin-left: 0%;
+        clear: none;
+    }
+}
+
+@media only screen and (max-width: 519px) {
+    #time {
+        font-size: 7.88em;
+    }
+
+    #Harry_Noodle_Timer {
+        font-size: 2.76em;
+    }
+
+    #button {
+        height: auto;
+        width: 138px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        clear: none;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    #box {
+        width: 51.294748%;
+        position: fixed;
+        margin: 0px;
+        top: auto;
+        left: 23.224765%;
+        bottom: 3.598269%;
+        right: auto;
+        display: block;
+    }
+
+    #time {
+        font-size: 5.28em;
+    }
+
+    #Harry_Noodle_Timer {
+        font-size: 1.36em;
+    }
+
+    #box1 {
+        margin-top: 150px;
+        margin-left: 0%;
+        clear: none;
+    }
+
+    .primaryContainer {
+        position: relative;
+    }
+
+    #about {
+        margin-top: 27px;
+        margin-left: 12.220236%;
+        clear: none;
+    }
+
+    #contact {
+        margin-top: 27px;
+        margin-left: 21.587415%;
+        clear: none;
+    }
+}
+
