@@ -4,29 +4,12 @@
     margin-right: auto;
     min-height: 100%;
     width: 100%;
-    /*background-image:url("img/bg-d.jpg");*/
-    background-image:url("img/bg-d-s.jpg");
+    background-image:url("img/bg-d.jpg");
     background-attachment: fixed;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat no-repeat;
-}
-
-#button {
-    float: left;
-    width: auto;
-    max-width: 100%;
-    height: auto;
-    color: rgb(0, 0, 0);
-    position: relative;
-    top: 0px;
-    left: 0px;
-    z-index: 12;
-    margin-top: 79px;
-    margin-left: 34.481534%;
-    clear: none;
-    margin-right: 0%;
 }
 
 #Harry_Noodle_Timer {
@@ -141,7 +124,85 @@
     width: 100%;
 }
 
-@media only screen and (max-width: 1195px) {
+#box2 {
+    float: none;
+    height: auto;
+    margin-left: auto;
+    margin-top: 79px;
+    clear: none;
+    width: 7.661017%;
+    margin-right: auto;
+}
+
+#input {
+    float: none;
+    height: 55px;
+    font-size: 1em;
+    margin-left: auto;
+    margin-top: -47px;
+    clear: none;
+    width: 7.563082%;
+    margin-right: auto;
+    background-image:url("img/button.png");
+    background-attachment: scroll;
+    -webkit-background-size: contain;
+    background-size: contain;
+    padding-top: 18px;
+    padding-bottom: 19px;
+    opacity: 1;
+    border-width: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    border-style: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-position: 50% 0%;
+    background-repeat: no-repeat no-repeat;
+}
+
+@media only screen and (max-width: 1526px) {
+    #box2 {
+        height: auto;
+        margin-top: 46px;
+        clear: none;
+        width: auto;
+    }
+
+    #input {
+        height: 55px;
+        font-size: 1em;
+        margin-top: 0px;
+        clear: none;
+        width: 126.98px;
+        background-image:url("img/button.png");
+        background-attachment: scroll;
+        -webkit-background-size: contain;
+        background-size: contain;
+        padding-top: 18px;
+        padding-bottom: 19px;
+        opacity: 1;
+        border-width: 0px;
+        background-color: rgba(255, 255, 255, 0);
+        border-style: none;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        background-position: 50% 0%;
+        background-repeat: no-repeat no-repeat;
+    }
+
+    #box1 {
+        margin-top: 157px;
+        margin-left: 0%;
+        clear: none;
+    }
+}
+
+@media only screen and (max-width: 1330px) {
     #contact {
         margin-right: 0%;
         clear: none;
@@ -156,14 +217,6 @@
     #Harry_Noodle_Timer {
         margin-top: 23px;
         clear: none;
-    }
-
-    #button {
-        margin-top: 27px;
-        margin-left: auto;
-        clear: none;
-        margin-right: auto;
-        float: none;
     }
 
     #box {
@@ -189,13 +242,6 @@
         margin-left: 0%;
         clear: none;
     }
-
-    #button {
-        margin-left: auto;
-        margin-right: auto;
-        float: none;
-        clear: none;
-    }
 }
 
 @media only screen and (max-width: 638px) {
@@ -209,14 +255,6 @@
         margin-top: 23px;
         clear: none;
         font-size: 3.06em;
-    }
-
-    #button {
-        margin-top: 27px;
-        margin-left: auto;
-        clear: none;
-        margin-right: auto;
-        float: none;
     }
 
     #contact {
@@ -250,16 +288,6 @@
 
     #Harry_Noodle_Timer {
         font-size: 2.76em;
-    }
-
-    #button {
-        height: auto;
-        width: 138px;
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        float: none;
-        clear: none;
     }
 }
 
@@ -302,6 +330,10 @@
     #contact {
         margin-top: 27px;
         margin-left: 21.587415%;
+        clear: none;
+    }
+
+    #box2 {
         clear: none;
     }
 }
