@@ -1,14 +1,24 @@
+
+
+
 console.log("== Run main.js ==");
 
-myCnt = 0;
-myTim = 0;
-flgTim = 0; //0:停止, 1:アクティブ
+// Global Variable
+// ===============
+MAX_CNT = 180;
+ONE_SEC = 1000;
 
+// タイマーの残り時間(秒) 3分->180
+gTimCnt = 0;
+// タイマーオブジェクト
+gTimObj = 0;
+// タイマーフラグ
+gTimFlg = 0; //0:停止, 1:アクティブ
+
+
+// ボタンが押されたら呼び出される中間関数
 function myGo(){
-	if(myTim){
-		console.log(myTim);
-	}
-	if( flgTim ){
+	if( gTimFlg ){
 		// 1:アクティブ中 -> タイマー停止
 		reset();
 	}else{
@@ -18,32 +28,35 @@ function myGo(){
 }
 
 function myTimer(){
+	// 残り時間をデクリメント
+	gTimCnt = gTimCnt - 1;
+	// 残り時間(分, 秒)を計算して、ゼロ埋め
+	var view_min = ( "0" + Math.floor(gTimCnt / 60) ).slice(-2);
+	var view_sec = ( "0" + Math.floor(gTimCnt % 60) ).slice(-2);
 	// 画面更新
-	myCnt = myCnt - 1;
-	view_min = ( "0" + Math.floor(myCnt / 60) ).slice(-2);
-	view_sec = ( "0" + Math.floor(myCnt % 60) ).slice(-2);
-	console.log(myCnt, view_min, view_sec);
 	document.getElementById( "time" ).innerHTML = view_min + ":" + view_sec;
-
 	// 終了判定
-	if ( myCnt == 0 ){
-		// clearInterval( myTim );
+	if ( gTimCnt == 0 ){
 		reset();
 		alert( "ラーメン食べ頃だよ！！" );
 	}
-	// デバッグ
-	console.log('== run myTimer ==');
-	console.log('myCnt'+myCnt);
 }
 
 function reset(){
-	flgTim = 0;
-	clearInterval( myTim );
-	document.getElementById( "time" ).innerHTML = "03:00";
+	// 停止フラグに変更
+	gTimFlg = 0;
+	// タイマーオブジェクトの停止
+	clearInterval( gTimObj );
+	// 残り時間(分, 秒)を計算して、ゼロ埋め
+	var view_min = ( "0" + Math.floor(MAX_CNT / 60) ).slice(-2);
+	var view_sec = ( "0" + Math.floor(MAX_CNT % 60) ).slice(-2);
+	document.getElementById( "time" ).innerHTML = view_min + ":" + view_sec;
+
 }
 function start(){
 	// 0:停止中 -> タイマー生成・開始
-	flgTim = 1;
-	myCnt = 180;
-	myTim = setInterval ( "myTimer()", 1000 );
+	gTimFlg = 1;
+	// 残り時間をリセット
+	gTimCnt = MAX_CNT;
+	gTimObj = setInterval ( "myTimer()", ONE_SEC );
 }
